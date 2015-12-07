@@ -12,5 +12,12 @@
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.2.1",
     "qunit": "~1.18.0"
+  },
+  "devDependencies": {
+    "ember-localstorage-adapter": "~0.5.2"
+  },
+  "resolutions": {
+    "ember": "1.13.7",
+    "ember-data": "1.13.8"
   }
 }

@@ -1,0 +1,12 @@
+.tile {
+  background-color = gray;
+},
+.noNum{
+  background-color = black;
+},
+.NumCount{
+
+},
+.isBomb{
+  background-color = red;
+},

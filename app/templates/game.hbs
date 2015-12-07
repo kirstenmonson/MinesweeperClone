@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-sm-12">
+    <h4>Welcome To Minesweeper</h4>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="col-sm-12">
+      Width: 10
+      Height: 10
+      Bombs: {{input value=bombNumber size="10"}}
+      <button {{action 'resets'}}>Reset</button>
+    </div>
+</div>
+
+  <div class="col-sm-9">
+ <table width="250px" style="border: 1px solid gray; margin:auto;">
+  {{#each map.rows as |row|}}
+    <tr>
+      {{#each row.cells as |cell|}}
+        <td style="text-align:center; class:tile; background-color:gray; border:1px;" height=25px><button>{{cell.text}}</button></td>
+      {{/each}}
+    </tr>
+  {{/each}}
+</table>
+  </div>
+</div>
